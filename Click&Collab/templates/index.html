@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Click&Collab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Click&Collab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="d-flex align-items-center justify-content-start" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success me-3" type="submit">Search</button>
+                <button id="loginButton" type="button" class="btn btn-primary me-3"
+                    onclick="window.location.href='/login'">Login</button>
+                <button type="button" class="btn btn-primary me-2"
+                    onclick="window.location.href='/register'">Register</button>
+            </form>
+
+
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500" class="img-fluid" alt="Placeholder Image">
+            </div>
+
+
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h1>Together We Rise</h2>
+                        <p>Find Your Perfect Partner based on Interests, Skills & Locations.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LABEL 1 -->
+    <h2 class="text-center mt-5">Full Stack Developer</h2>
+    
+    <!-- CARDS -->
+    <div class="container mt-5">
+        <div class="d-flex overflow-auto" style="white-space: nowrap;">
+            <!-- Card 1 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_lady.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Namrata Chaudhari</h5>
+                    <p class="card-text"><strong>Domain:</strong> Software Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_men.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Om Bhandarkar</h5>
+                    <p class="card-text"><strong>Domain:</strong> Software Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_lady.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Tanmayi Chavan</h5>
+                    <p class="card-text"><strong>Domain:</strong> Software Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_men.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ajay Nikumbh</h5>
+                    <p class="card-text"><strong>Domain:</strong> Software Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_men.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pratik Donajamath</h5>
+                    <p class="card-text"><strong>Domain:</strong> Software Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- LABEL 2 -->
+    <h2 class="text-center mt-5">Mobile Developer</h2>
+
+    <!-- CARDS -->
+    <div class="container mt-5">
+        <div class="d-flex overflow-auto" style="white-space: nowrap;">
+            <!-- Card 1 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_lady.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Namrata Chaudhari</h5>
+                    <p class="card-text"><strong>Domain:</strong> Flutter Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_men.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Om Bhandarkar</h5>
+                    <p class="card-text"><strong>Domain:</strong> Software Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_lady.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Tanmayi Chavan</h5>
+                    <p class="card-text"><strong>Domain:</strong> Software Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_men.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ajay Nikumbh</h5>
+                    <p class="card-text"><strong>Domain:</strong> Software Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="static\img\default_men.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                    alt="Profile Photo" style="width: 100px; height: 100px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pratik Donajamath</h5>
+                    <p class="card-text"><strong>Domain:</strong> Android Developer</p>
+                    <!-- Skill text that hides overflow -->
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        <strong>Skills:</strong> Java, Flutter, C/CPP, React, Node.js, MongoDB
+                    </p>
+                    <button class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

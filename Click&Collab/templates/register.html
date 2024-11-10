@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Credential</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .register-container {
+            width: 100%;
+            max-width: 500px;
+            /* Adjust Width */
+            padding: 20px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            background: #ffffff;
+        }
+
+        .card-header {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #6e8efb;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #6e8efb;
+            border-color: #6e8efb;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        .btn-primary:hover {
+            background-color: #a777e3;
+            border-color: #a777e3;
+        }
+
+        .form-control:focus {
+            border-color: #6e8efb;
+            box-shadow: 0 0 0 0.2rem rgba(110, 142, 251, 0.25);
+        }
+
+        .card-footer {
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        .card-footer a {
+            color: #6e8efb;
+            text-decoration: none;
+        }
+
+        .card-footer a:hover {
+            color: #a777e3;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- REGISTER MODEL -->
+    <div class="register-container">
+        <div class="card">
+            <div class="card-header">
+                Register
+                <a href="/" class="close btn btn-outline-primary btn-sm float-right">&times;</a>
+            </div>
+            <div class="card-body">
+                <form id="registerForm" method="POST" action="/register">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                            placeholder="Confirm your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>
+                
+            </div>
+            <div class="card-footer">
+                <small>Already have an account? <a href="login.html">Login here</a></small>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page reload
+        
+            const formData = new FormData(this);
+        
+            fetch('/register', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "success") {
+                    alert(data.message);
+                    window.location.href = "/"
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => console.error("Error:", error));
+        });
+        </script>
+        
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

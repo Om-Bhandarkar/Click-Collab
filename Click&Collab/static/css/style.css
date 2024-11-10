@@ -1,0 +1,27 @@
+.custom-btn-large {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    
+  }
+  .wide-btn {
+    width: 150px; /* Adjust width as needed */
+    white-space: nowrap;
+  }
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+ 
+
+  /* *****************login page *************/
+
+  
